@@ -7,6 +7,29 @@
 
 <style>
 
+  nav{
+background:#ffffff;
+border-bottom:1px solid #e5e5e5;
+}
+
+nav .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 20px;
+}
+
+nav a{
+text-decoration:none;
+color:#3d5a80;
+margin-left:20px;
+font-weight:500;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+  
 body{
 font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 margin:0;
@@ -83,7 +106,21 @@ color:#666;
 </head>
 
 <body>
+<nav>
+<div class="container">
 
+<div>
+<strong>Dr Carla Moran</strong>
+</div>
+
+<div>
+<a href="#about">About</a>
+<a href="#expertise">Expertise</a>
+<a href="#clinical">Clinical</a>
+</div>
+
+</div>
+</nav>
 <header>
 <div class="container hero">
 
@@ -103,7 +140,7 @@ Associate Professor, University College Dublin
 <section>
 <div class="container">
 
-<h2>About</h2>
+<h2 id="about">About</h2>
 
 <p>
 Dr Carla Moran is a consultant endocrinologist based in Dublin with specialist expertise in thyroid disease, rare endocrine disorders and endocrine disease in pregnancy. She completed specialist training in Endocrinology, Diabetes Mellitus and General Internal Medicine in Ireland before undertaking a fellowship in thyroid disease at Addenbrooke’s Hospital and the University of Cambridge, where she obtained her PhD.
@@ -115,7 +152,7 @@ Dr Carla Moran is a consultant endocrinologist based in Dublin with specialist e
 <section>
 <div class="container">
 
-<h2>Areas of Expertise</h2>
+<h2 id="expertise">Areas of Expertise</h2>
 
 <div class="expertise">
 
@@ -135,7 +172,7 @@ Dr Carla Moran is a consultant endocrinologist based in Dublin with specialist e
 <section>
 <div class="container">
 
-<h2>Clinical Practice</h2>
+<h2 id="clinical">Clinical Practice</h2>
 
 <p>
 Beacon Hospital<br>
